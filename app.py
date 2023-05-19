@@ -9,4 +9,4 @@ mongo = PyMongo(app)
 @app.route("/")
 def index():
     mongo.db.users.insert_one({"name": "John"})
-    return "Document inserted."
+    return "Document inserted"
